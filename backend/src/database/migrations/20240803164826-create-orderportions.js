@@ -3,63 +3,44 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    await queryInterface.createTable('offers', { 
+    await queryInterface.createTable('orderportions', {
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
         allowNull: false
       },
-      tax: {
+      nDup: {
         type: Sequelize.STRING,
         allowNull: false
       },
-      tariff: {
+      dVenc: {
         type: Sequelize.STRING,
         allowNull: false
       },
-      adValorem: {
+      vDup: {
         type: Sequelize.STRING,
         allowNull: false
       },
-      float: {
-        type: Sequelize.STRING,
-        allowNull: false
-      },
-      iof: {
-        type: Sequelize.STRING,
-        allowNull: false
-      },
-      expiresIn: {
-        type: Sequelize.DATE,
-        allowNull: false
-      },
-      paymentStatusSponsor: {
+      availableToMarket: {
         type: Sequelize.TINYINT,
-        defaultValue: 0
-      },
-      paymentStatusProvider: {
-        type: Sequelize.TINYINT,
-        defaultValue: 0
+        defaultValue: 1
       },
       createdAt: {
+        type: Sequelize.DATE,
         allowNull: false,
-        type: Sequelize.DATE
       },
       updatedAt: {
+        type: Sequelize.DATE,
         allowNull: false,
-        type: Sequelize.DATE
       },
       orderId: {
-        type: Sequelize.INTEGER,
-      },
-      sponsorId: {
         type: Sequelize.INTEGER,
       },
     });
   },
 
   async down (queryInterface, Sequelize) {
-    await queryInterface.dropTable('offers');
+    await queryInterface.dropTable('orderportions');
   }
 };
