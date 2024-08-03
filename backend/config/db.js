@@ -6,6 +6,5 @@ module.exports = {
   database: 'cashforce_v3',
   define: {
     timestamps: true,
-    underscored: true,
   },
 }

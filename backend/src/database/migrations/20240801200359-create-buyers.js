@@ -69,8 +69,19 @@ module.exports = {
       situationDate: {
         type: Sequelize.STRING,
       },
+      createdAt: {
+        allowNull: false,
+        type: Sequelize.DATE
+      },
+      updatedAt: {
+        allowNull: false,
+        type: Sequelize.DATE
+      },
       cnpjId: {
         type: Sequelize.INTEGER, 
+        references: { model: 'cnpjs', key: 'id' },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE'
       },
       confirm: {
         type: Sequelize.TINYINT,
