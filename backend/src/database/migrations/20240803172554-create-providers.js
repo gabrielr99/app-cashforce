@@ -3,14 +3,13 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    await queryInterface.createTable('buyers', { 
+    await queryInterface.createTable('providers', { 
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
         allowNull: false
       },
-      id: Sequelize.INTEGER,
       name: {
         type: Sequelize.STRING,
         allowNull: false
@@ -60,6 +59,18 @@ module.exports = {
       state: {
         type: Sequelize.STRING,
       },
+      bank: {
+        type: Sequelize.STRING,
+      },
+      bankAgency: {
+        type: Sequelize.STRING,
+      },
+      account: {
+        type: Sequelize.STRING,
+      },
+      documents: {
+        type: Sequelize.STRING,
+      },
       phoneNumber: {
         type: Sequelize.STRING,
       },
@@ -70,29 +81,24 @@ module.exports = {
         type: Sequelize.STRING,
       },
       createdAt: {
-        allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        allowNull: false
       },
       updatedAt: {
-        allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        allowNull: false
       },
       cnpjId: {
-        type: Sequelize.INTEGER, 
-        references: { model: 'cnpjs', key: 'id' },
-        update: 'CASCADE',
-      },
-      confirm: {
-        type: Sequelize.TINYINT,
-        defaultValue: 1
+        type: Sequelize.INTEGER,
+        references: { model: 'cnpjs', key: 'id' }
       },
       email: {
         type: Sequelize.STRING,
-      }
+      },
     });
   },
 
   async down (queryInterface, Sequelize) {
-    await queryInterface.dropTable('buyers');
+    await queryInterface.dropTable('providers');
   }
 };
