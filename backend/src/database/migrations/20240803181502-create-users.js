@@ -2,38 +2,38 @@
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  async up(queryInterface, Sequelize) {
     await queryInterface.createTable('users', { 
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
-        allowNull: false
+        allowNull: false,
       },
       name: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
       },
       email: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true
+        unique: true,
       },
       phoneNumber: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       mobile: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       department: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       verifationCode: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       emailChecked: {
         type: Sequelize.TINYINT,
-        defaultValue: 0
+        defaultValue: 0,
       },
       createdAt: {
         type: Sequelize.DATE,
@@ -45,12 +45,12 @@ module.exports = {
       },
       cashforceAdm: {
         type: Sequelize.TINYINT,
-        defaultValue: 0
+        defaultValue: 0,
       },
      });
   },
 
-  async down (queryInterface, Sequelize) {
+  async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('users');
-  }
+  },
 };

@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require("sequelize");
+const { Model, DataTypes } = require('sequelize');
 
 class Buyers extends Model {
   static init(sequelize) {
@@ -26,12 +26,12 @@ class Buyers extends Model {
       confirm: DataTypes.TINYINT,
       email: DataTypes.STRING,
     }, {
-      sequelize
-    })
+      sequelize,
+    });
   }
 
   static associate(models) {
-    this.hasMany(models.Orders, { foreignKey: 'buyerId', as: 'buyer' })
+    this.hasMany(models.Orders, { foreignKey: 'buyerId', as: 'buyer' });
   }
 }
 

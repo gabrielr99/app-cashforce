@@ -2,17 +2,17 @@
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  async up(queryInterface, Sequelize) {
     await queryInterface.createTable('providers', { 
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
-        allowNull: false
+        allowNull: false,
       },
       name: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
       },
       tradingName: {
         type: Sequelize.STRING,
@@ -82,15 +82,15 @@ module.exports = {
       },
       createdAt: {
         type: Sequelize.DATE,
-        allowNull: false
+        allowNull: false,
       },
       updatedAt: {
         type: Sequelize.DATE,
-        allowNull: false
+        allowNull: false,
       },
       cnpjId: {
         type: Sequelize.INTEGER,
-        references: { model: 'cnpjs', key: 'id' }
+        references: { model: 'cnpjs', key: 'id' },
       },
       email: {
         type: Sequelize.STRING,
@@ -98,7 +98,7 @@ module.exports = {
     });
   },
 
-  async down (queryInterface, Sequelize) {
+  async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('providers');
-  }
+  },
 };

@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require("sequelize");
+const { Model, DataTypes } = require('sequelize');
 
 class Cnpjs extends Model {
   static init(sequelize) {
@@ -12,8 +12,8 @@ class Cnpjs extends Model {
       emailChecked: DataTypes.TINYINT,
       cashforceAdmin: DataTypes.TINYINT,
     }, {
-      sequelize
-    })
+      sequelize,
+    });
   }
 }
 

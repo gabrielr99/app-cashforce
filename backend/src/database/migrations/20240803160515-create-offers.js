@@ -2,53 +2,53 @@
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  async up(queryInterface, Sequelize) {
     await queryInterface.createTable('offers', { 
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
-        allowNull: false
+        allowNull: false,
       },
       tax: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
       },
       tariff: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
       },
       adValorem: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
       },
       float: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
       },
       iof: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
       },
       expiresIn: {
         type: Sequelize.DATE,
-        allowNull: false
+        allowNull: false,
       },
       paymentStatusSponsor: {
         type: Sequelize.TINYINT,
-        defaultValue: 0
+        defaultValue: 0,
       },
       paymentStatusProvider: {
         type: Sequelize.TINYINT,
-        defaultValue: 0
+        defaultValue: 0,
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       orderId: {
         type: Sequelize.INTEGER,
@@ -59,7 +59,7 @@ module.exports = {
     });
   },
 
-  async down (queryInterface, Sequelize) {
+  async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('offers');
-  }
+  },
 };

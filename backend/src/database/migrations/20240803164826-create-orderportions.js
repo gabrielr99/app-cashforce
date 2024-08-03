@@ -2,29 +2,29 @@
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  async up(queryInterface, Sequelize) {
     await queryInterface.createTable('orderportions', {
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
-        allowNull: false
+        allowNull: false,
       },
       nDup: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
       },
       dVenc: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
       },
       vDup: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
       },
       availableToMarket: {
         type: Sequelize.TINYINT,
-        defaultValue: 1
+        defaultValue: 1,
       },
       createdAt: {
         type: Sequelize.DATE,
@@ -40,7 +40,7 @@ module.exports = {
     });
   },
 
-  async down (queryInterface, Sequelize) {
+  async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('orderportions');
-  }
+  },
 };

@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require("sequelize");
+const { Model, DataTypes } = require('sequelize');
 
 class Orderportions extends Model {
   static init(sequelize) {
@@ -9,8 +9,8 @@ class Orderportions extends Model {
       availableToMarket: DataTypes.TINYINT,
       orderId: DataTypes.INTEGER,
     }, {
-      sequelize
-    })
+      sequelize,
+    });
   }
 }
 

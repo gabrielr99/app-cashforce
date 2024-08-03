@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require("sequelize");
+const { Model, DataTypes } = require('sequelize');
 
 class Cnpjs extends Model {
   static init(sequelize) {
@@ -6,8 +6,8 @@ class Cnpjs extends Model {
       cnpj: DataTypes.STRING,
       companyType: DataTypes.STRING,
     }, {
-      sequelize
-    })
+      sequelize,
+    });
   }
 }
 

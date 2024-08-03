@@ -2,34 +2,34 @@
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  async up(queryInterface, Sequelize) {
     await queryInterface.createTable('orders', {
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
-        allowNull: false
+        allowNull: false,
       },
       orderNfId: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true
+        unique: true,
       },
       orderNumber: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
       },
       orderPath: {
         type: Sequelize.STRING,
-        unique: true
+        unique: true,
       },
       orderFileName: {
         type: Sequelize.STRING,
-        unique: true
+        unique: true,
       },
       orderOriginalName: {
         type: Sequelize.STRING,
-        unique: true
+        unique: true,
       },
       emissionDate: {
         type: Sequelize.STRING,
@@ -39,14 +39,14 @@ module.exports = {
       },
       emitedTo: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
       },
       nNf: {
         type: Sequelize.STRING,
       },
       CTE: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
       },
       value: {
         type: Sequelize.STRING,
@@ -61,25 +61,25 @@ module.exports = {
       },
       cnpjId: {
         type: Sequelize.INTEGER,
-        references: { model: 'cnpjs', key: 'id' }
+        references: { model: 'cnpjs', key: 'id' },
       },
       userId: {
         type: Sequelize.INTEGER,
       },
       buyerId: {
         type: Sequelize.INTEGER,
-        references: { model: 'buyers', key: 'id' }
+        references: { model: 'buyers', key: 'id' },
       },
       providerId: {
         type: Sequelize.INTEGER,
       },
       orderStatusBuyer: {
         type: Sequelize.STRING,
-        defaultValue: 0
+        defaultValue: 0,
       },
       orderStatusProvider: {
         type: Sequelize.STRING,
-        defaultValue: 0
+        defaultValue: 0,
       },
       deliveryReceipt: {
         type: Sequelize.STRING,
@@ -93,7 +93,7 @@ module.exports = {
     });
   },
 
-  async down (queryInterface, Sequelize) {
+  async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('orders');
-  }
+  },
 };
