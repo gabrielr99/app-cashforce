@@ -31,6 +31,10 @@ class Sponsors extends Model {
       sequelize,
     });
   }
+
+  static associate(models) {
+    this.hasMany(models.Cnpjs, { foreignKey: 'cnpjId', as: 'cnpj' });
+  }
 }
 
 module.exports = Sponsors;

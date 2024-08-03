@@ -62,16 +62,22 @@ module.exports = {
       cnpjId: {
         type: Sequelize.INTEGER,
         references: { model: 'cnpjs', key: 'id' },
+        update: 'CASCADE',
       },
       userId: {
         type: Sequelize.INTEGER,
+        references: { model: 'users', key: 'id' },
+        update: 'CASCADE',
       },
       buyerId: {
         type: Sequelize.INTEGER,
         references: { model: 'buyers', key: 'id' },
+        update: 'CASCADE',
       },
       providerId: {
         type: Sequelize.INTEGER,
+        references: { model: 'providers', key: 'id' },
+        update: 'CASCADE',
       },
       orderStatusBuyer: {
         type: Sequelize.STRING,

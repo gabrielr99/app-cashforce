@@ -17,6 +17,11 @@ class Offers extends Model {
       sequelize,
     });
   }
+
+  static associate(models) {
+    this.belongsTo(models.Orders, { foreignKey: 'orderId', as: 'order' });
+    this.belongsTo(models.Sponsors, { foreignKey: 'sponsorId', as: 'sponsor' });
+  }
 }
 
 module.exports = Offers;

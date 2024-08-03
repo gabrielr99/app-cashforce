@@ -12,6 +12,10 @@ class Orderportions extends Model {
       sequelize,
     });
   }
+
+  static associate(models) {
+    this.belongsTo(models.Orders, { foreignKey: 'orderId', as: 'order' });
+  }
 }
 
 module.exports = Orderportions;

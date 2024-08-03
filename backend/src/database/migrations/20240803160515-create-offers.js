@@ -52,9 +52,13 @@ module.exports = {
       },
       orderId: {
         type: Sequelize.INTEGER,
+        references: { model: 'orders', key: 'id' },
+        update: 'CASCADE',
       },
       sponsorId: {
         type: Sequelize.INTEGER,
+        references: { model: 'sponsors', key: 'id' },
+        update: 'CASCADE',
       },
     });
   },

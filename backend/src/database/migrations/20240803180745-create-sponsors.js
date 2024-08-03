@@ -87,6 +87,8 @@ module.exports = {
       },
       cnpjId: {
         type: Sequelize.INTEGER,
+        references: { model: 'cnpjs', key: 'id' },
+        update: 'CASCADE',
       },
       email: {
         type: Sequelize.STRING,
