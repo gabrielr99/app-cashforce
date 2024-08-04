@@ -29,8 +29,8 @@ Adicione notas adicionais sobre como implantar isso em um sistema ativo
 Mencione as ferramentas que você usou para criar seu projeto
 
 * [NodeJs](https://nodejs.org/en)
-* [Sequelize](https://sequelize.org/) - Gerente de Dependência
-* [MariaDB](https://mariadb.org/) - Usada para gerar RSS
+* [Sequelize](https://sequelize.org/) - ORM
+* [MariaDB](https://mariadb.org/) - Banco de dadaos 
 .
 
 ## 📌 Versão
