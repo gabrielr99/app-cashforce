@@ -29,10 +29,12 @@ class Orders extends Model {
   }
 
   static associate(models) {
-    this.belongsTo(models.Users, { foreignKey: 'userId', as: 'user' });
     this.belongsTo(models.Buyers, { foreignKey: 'buyerId', as: 'buyer' });
-    this.belongsTo(models.Providers, { foreignKey: 'providerId', as: 'provider' });
     this.belongsTo(models.Cnpjs, { foreignKey: 'cnpjId', as: 'cnpj' });
+    this.hasMany(models.Offers, { foreignKey: 'orderId', as: 'offers' });
+    this.hasMany(models.Orderportions, { as: "orderportions", foreignKey: "orderId"});
+    this.belongsTo(models.Providers, { foreignKey: 'providerId', as: 'provider' });
+    this.belongsTo(models.Users, { foreignKey: 'userId', as: 'user' });
   }
 }
 

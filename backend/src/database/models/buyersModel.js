@@ -31,7 +31,8 @@ class Buyers extends Model {
   }
 
   static associate(models) {
-    this.hasMany(models.Orders, { foreignKey: 'buyerId', as: 'buyer' });
+    this.hasMany(models.Orders, { foreignKey: 'buyerId', as: 'orders' });
+    this.belongsTo(models.Cnpjs, { foreignKey: 'cnpjId', as: 'cnpj' });
   }
 }
 

@@ -34,7 +34,8 @@ class Providers extends Model {
   }
 
   static associate(models) {
-    this.hasMany(models.Orders, { foreignKey: 'providerId', as: 'provider' });
+    this.belongsTo(models.Cnpjs, { foreignKey: "cnpjId", as: "cnpj" });
+    this.hasMany(models.Orders, { foreignKey: "providerId", as: "orders"});
   }
 }
 

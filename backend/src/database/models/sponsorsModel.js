@@ -33,7 +33,8 @@ class Sponsors extends Model {
   }
 
   static associate(models) {
-    this.hasMany(models.Cnpjs, { foreignKey: 'cnpjId', as: 'cnpj' });
+    this.belongsTo(models.Cnpjs, { foreignKey: 'cnpjId', as: 'cnpj' });
+    this.hasMany(models.Offers, { as: "offers", foreignKey: "sponsorId"});
   }
 }
 
