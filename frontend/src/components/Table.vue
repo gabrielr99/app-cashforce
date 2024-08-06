@@ -16,8 +16,8 @@
         <div class="td">{{ order.orderNumber }}</div>
         <div class="td">{{ order.buyer.name }}</div>
         <div class="td">{{ order.provider.name }}</div>
-        <div class="td">{{ formatarData(order.createdAt) }}</div>
-        <div class="td value-table">{{ formatarValor(order.value) }}</div>
+        <div class="td">{{ formatData(order.createdAt) }}</div>
+        <div class="td value-table">{{ formatValue(order.value) }}</div>
         <div class="td status-table">{{ formatStatus(order.orderStatusBuyer) }}</div>
         <div class="td button-table">
           <button>Dados do cedente</button>
@@ -53,10 +53,10 @@
           console.error('Erro:', error);
         });
     },
-    formatarData(data) {
+    formatData(data) {
       return moment(data).format('DD/MM/YYYY');
     },
-    formatarValor(valor) {
+    formatValue(valor) {
       // Converte a string para número e formata como moeda
       return Number(valor).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
     },

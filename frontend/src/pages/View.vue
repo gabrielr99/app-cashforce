@@ -1,7 +1,7 @@
 <template>
   <div class="page-default">
     <Aside />
-    <div class="container-header">
+    <div class="container-header-orders">
       <div class="header"></div>
       <Orders />
     </div>
@@ -27,7 +27,7 @@
     margin: 0;
     width: 100%;
   }
-  .container-header {
+  .container-header-orders {
     width: 85%;
     height: 100vh;
     left: 15%;
