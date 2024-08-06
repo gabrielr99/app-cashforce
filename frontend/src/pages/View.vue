@@ -39,31 +39,4 @@
     top: 0px;
     border-bottom: 1px solid rgb(230, 230, 230);
   }
-  .container-nf {
-    width: 96.63%;
-    height: calc(100vh - 60px);
-    top: 60px;
-    margin: 50px;
-  }
-  .svg-notas-fiscais {
-    width: 182px;
-    height: 28px;
-    margin: 10px;
-    display: flex;
-  }
-  .p-nf {
-    margin-left: 18px;
-    margin-top: 3px;
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-    color: rgb(46, 191, 164);
-  }
-  .container-svg-span-nf {
-    margin-bottom: 10px;
-  }
-  
-  .span-botton {
-    font-size: 13px;
-  }
 </style>

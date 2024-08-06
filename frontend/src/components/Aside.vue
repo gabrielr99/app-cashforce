@@ -44,7 +44,7 @@ export default {
     height: 100vh;
     left: 0px;
     top: 0px;
-    background-color: rgb(240, 240, 241);
+    background-color: rgb(244, 244, 244);
     box-shadow: 0px 0px 3px rgb(232, 232, 232);
   }
   .menu-item {
