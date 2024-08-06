@@ -18,6 +18,12 @@ Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar 
 
 Rodando banco de dados
 - pasta backend
+``` npm install ```
+``` npm run dev ```
+
+Rodando banco de dados
+- pasta frontend
+``` npm install ```
 ``` npm run dev ```
 
 ## 📦 Implantação
