@@ -98,7 +98,6 @@
 
   .table-header {
     font-weight: bold;
-    background-color: #f2f2f2;
   }
 
   .table-td {
