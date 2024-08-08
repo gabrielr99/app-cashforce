@@ -43,7 +43,7 @@
   }
   .container-nf {
     width: 96.63%;
-    height: calc(100vh - 60px);
+    height: 100vh;
     top: 60px;
     margin: 50px;
   }

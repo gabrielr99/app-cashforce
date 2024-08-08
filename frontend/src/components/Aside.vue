@@ -44,7 +44,7 @@ export default {
     height: 100vh;
     left: 0px;
     top: 0px;
-    background-color: rgb(244, 244, 244);
+    background-color: #F4F4F4;
     box-shadow: 0px 0px 3px rgb(232, 232, 232);
   }
   .menu-item {
@@ -52,7 +52,7 @@ export default {
     align-items: center;
     cursor: pointer;
     height: 64px;
-    border-left: 5px solid  rgba(0, 173, 140, 1);
+    border-left: 5px solid  rgb(0, 173, 140)
   }
   .container-svg-nf {
     width: 60%;
@@ -71,6 +71,6 @@ export default {
     font-size: 14px;
     font-weight: 500;
     text-align: center;
-    color: rgb(46, 191, 164);
+    color: rgb(0, 173, 140)
   }
 </style>

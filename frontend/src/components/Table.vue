@@ -145,13 +145,14 @@
     border-radius: 10px solid;
   }
   .value-table {
-    color: rgb(2, 208, 170);
+    color: rgb(0, 173, 140);
   }
   .status-table {
     width: 180px;
-    color: rgb(2, 208, 170);;
+    color: rgb(0, 173, 140);;
   }
   .button-table {
+    background-color: #FBFDFE;
     width: 20%;
     padding: 0px 10px 0px 5px;
     display: flex;
@@ -161,6 +162,7 @@
   .button-table > button {
     border: 1px solid #CAD3FF;
     border-radius: 17px;
+    background-color: #FBFDFE;
     cursor: pointer;
     height: 28px;
     width: 140px;

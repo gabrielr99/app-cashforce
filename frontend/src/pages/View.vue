@@ -26,12 +26,14 @@
     display: flex;
     margin: 0;
     width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
   }
   .container-header-orders {
     width: 85%;
-    height: 100vh;
+    height: 100%;
     left: 15%;
-    top: 0px;
   }
   .header {
     width: 100%;
