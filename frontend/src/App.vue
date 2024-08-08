@@ -14,17 +14,16 @@ export default {
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
   html {
-    width: 100vw;
-    height: 100vh;
+    max-width: 100vw;  /* Limita a largura ao tamanho da viewport */
+    max-height: 100vh; /* Limita a altura ao tamanho da viewport */
+    overflow: auto; 
     margin: 0;
     padding: 0;
-    overflow: hidden;
   }
 
   body {
     padding: 0px;
     margin: 0px;
-    height: 100%;
     font-family: 'DM Sans', sans-serif;
   }
 

@@ -42,8 +42,7 @@
     margin-bottom: 10px;
   }
   .container-nf {
-    width: 96.63%;
-    height: 100vh;
+    width: 96.63%;;
     top: 60px;
     margin: 50px;
   }
