@@ -8,13 +8,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
 
-### 📋 Pré-requisitos
-
-
 ### 🔧 Instalação
-
-- pasta raiz
-``` npm install ```
 
 Rodando banco de dados
 - pasta backend
@@ -28,7 +22,7 @@ Rodando banco de dados
 
 ## 📦 Implantação
 
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
+<a href="https://ibb.co/M208JV3"><img src="https://i.ibb.co/r7rbX61/Captura-de-tela-2024-08-08-102401.png" alt="print da pagina feita para o teste da cashforce" border="0"></a>
 
 ## 🛠️ Construído com
 
@@ -37,11 +31,14 @@ Mencione as ferramentas que você usou para criar seu projeto
 * [NodeJs](https://nodejs.org/en)
 * [Sequelize](https://sequelize.org/) - ORM
 * [MariaDB](https://mariadb.org/) - Banco de dadaos 
-.
+* [Vue](https://br.vuejs.org/) - Framework JavaScript / criação interface
+
 
 ## 📌 Versão
 
-Nós usamos [Git] para controle de versão.
+Nós usamos 
+[Git] para controle de versão.
+[Npm] para gerenciamento de pacotes.
 
 ## ✒️ Autores
 
