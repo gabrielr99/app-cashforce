@@ -22,7 +22,7 @@ Rodando fontend
 
 ## 📦 Implantação
 
-<a href="https://ibb.co/M208JV3"><img src="https://i.ibb.co/r7rbX61/Captura-de-tela-2024-08-08-102401.png" alt="print da pagina feita para o teste da cashforce" border="0"></a>
+<a href="https://ibb.co/ykFbs35"><img src="https://i.ibb.co/n1M5kWf/Captura-de-tela-2024-08-08-193830.png" alt="Captura-de-tela-2024-08-08-193830" border="0"></a>
 
 ## 🛠️ Construído com
 
