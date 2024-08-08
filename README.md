@@ -15,7 +15,7 @@ Rodando banco de dados
 ``` npm install ```
 ``` npm run dev ```
 
-Rodando banco de dados
+Rodando fontend
 - pasta frontend
 ``` npm install ```
 ``` npm run dev ```
